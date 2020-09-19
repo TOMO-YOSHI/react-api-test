@@ -4,6 +4,9 @@ import './Camera.styles.scss'
 
 const Camera = () => {
 
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+
     useEffect(()=> {
         var video = document.getElementById('video');
 
@@ -44,7 +47,7 @@ const Camera = () => {
 
         // Trigger photo take
         document.getElementById("snap").addEventListener("click", function () {
-            context.drawImage(video, 0, 0, 375, 281.25);
+            context.drawImage(video, 0, 0, w, h);
 
             var img = canvas.toDataURL("image/png");
             const imageArea = document.getElementById("imageArea");
@@ -55,12 +58,16 @@ const Camera = () => {
 
     return (
       <div className="cameraDiv">
-        <video id="video" width="375" height="281.25" autoPlay></video>
-        <button id="snap">Snap Photo</button>
-        <canvas id="canvas" width="375" height="281.25"></canvas>
+        <div className="videoContainer">
+          <video id="video" width={w} height={h}></video>
+          <button id="snap">Snap Photo</button>
+        </div>
+        <canvas id="canvas" width={w} height={h}></canvas>
+        <canvas id="canvas"></canvas>
         <div id="imageArea"></div>
       </div>
     );
 };
 
 export default Camera;
+

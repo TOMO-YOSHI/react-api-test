@@ -1,10 +1,15 @@
 .cameraDiv {
-    text-align: center;
-    width: 100% !important;
+    .videoContainer {
+        position: relative;
+        text-align: center;
+        // width: 100% !important;
+    }
 
     #snap {
-        display: block;
+        // position: absolute;
+        // display: block;
         margin: 1rem auto;
+        padding: 0 auto;
     }
 
     #canvas {
@@ -15,6 +20,7 @@
 
         img {
             max-width: 100%;
+            height: auto;
         }
     }
 }
