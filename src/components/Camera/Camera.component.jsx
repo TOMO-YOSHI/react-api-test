@@ -44,7 +44,7 @@ const Camera = () => {
 
         // Trigger photo take
         document.getElementById("snap").addEventListener("click", function () {
-            context.drawImage(video, 0, 0, 640, 480);
+            context.drawImage(video, 0, 0, 375, 281.25);
 
             var img = canvas.toDataURL("image/png");
             const imageArea = document.getElementById("imageArea");
@@ -55,9 +55,9 @@ const Camera = () => {
 
     return (
       <div className="cameraDiv">
-        <video id="video" width="375" height="auto" autoPlay></video>
+        <video id="video" width="375" height="281.25" autoPlay></video>
         <button id="snap">Snap Photo</button>
-        <canvas id="canvas" width="640" height="480"></canvas>
+        <canvas id="canvas" width="375" height="281.25"></canvas>
         <div id="imageArea"></div>
       </div>
     );
