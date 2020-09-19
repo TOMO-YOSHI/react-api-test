@@ -1,6 +1,8 @@
 import React from "react";
 import Webcam from "react-webcam";
 
+import './WebCam.styles.scss';
+
 const videoConstraints = {
   width: 1280,
   height: 720,
@@ -32,7 +34,7 @@ const WebcamCapture = () => {
         width={w}
         videoConstraints={videoConstraints}
       />
-      <button onClick={capture}>Capture photo</button>
+      <button className="takePhoto" onClick={capture}>Capture photo</button>
       <div id="imageArea"></div>
     </div>
   );
