@@ -2,21 +2,19 @@
     text-align: center;
     width: 100% !important;
 
-    // #video {
-    //     max-width: 640;
-    //     max-height: 480;
-    // }
-
-    // display: flex;
-    // grid-template-columns: 1;
-
     #snap {
         display: block;
         margin: 1rem auto;
     }
 
-    // canvas {
-    //     width: 640 !important;
-    //     height: 480 !important;
-    // }
+    #canvas {
+        display: none;
+    }
+
+    #imageArea {
+
+        img {
+            max-width: 100%;
+        }
+    }
 }
