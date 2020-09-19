@@ -30,12 +30,12 @@ const Camera = () => {
     },[])
 
     return (
-        <div className="cameraDiv">
-            <video id="video" autoPlay></video>
-            <button id="snap">Snap Photo</button>
-            <canvas id="canvas"></canvas>
-        </div>
-    )
+      <div className="cameraDiv">
+        <video id="video" max-width="640" max-height="480" autoPlay></video>
+        <button id="snap">Snap Photo</button>
+        <canvas id="canvas" width="640" height="480"></canvas>
+      </div>
+    );
 };
 
 export default Camera;
