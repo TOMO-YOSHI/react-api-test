@@ -59,7 +59,7 @@ const Camera = () => {
     return (
       <div className="cameraDiv">
         <div className="videoContainer">
-          <video id="video" width={w} height={h}></video>
+          <video id="video" width={w} height={h} autoPlay></video>
           <button id="snap">Snap Photo</button>
         </div>
         <canvas id="canvas" width={w} height={h}></canvas>
