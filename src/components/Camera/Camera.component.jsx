@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-// import './Camera.styles.scss'
+import './Camera.styles.scss'
 
 const Camera = () => {
 

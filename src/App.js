@@ -1,7 +1,7 @@
 import React from 'react';
-// import './App.css';
+import './App.css';
 
-import Camera from './components/Camera/Camera.component.jsx.js';
+import Camera from './components/Camera/Camera.component.jsx';
 
 function App() {
   return (
